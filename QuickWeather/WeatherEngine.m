@@ -23,7 +23,7 @@
 -(void)getWeather:(NSString *)string withBlock:(void (^)(NSDictionary *dict,NSError *error))block{
     
     NSString *url = @"http://api.openweathermap.org/data/2.5/weather?q=";
-    NSString *appID = @"&appid=fa6a2417f903305bf63eb7bc2fe83ec1";
+    //NSString *appID = @"&appid=#"; replaced my APPID with # for privacy
     
     NSString *fullString = [NSString stringWithFormat:@"%@%@%@",url,string,appID];
     
